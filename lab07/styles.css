@@ -1,6 +1,6 @@
 body { font-family: Georgia, serif; }
-h1, h2 {color:darkolivegreen}
-.evenrow{background-color:palevioletred}
+h1, h2 {color:palevioletred}
+.evenrow{background-color: #CCCCFF}
 h1 {font-size: 5em;}
 h2 {font-size: 3em;}
 
