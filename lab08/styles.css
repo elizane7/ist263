@@ -1,6 +1,6 @@
 body { font-family: Georgia, serif; }
-h1, h2 {color:palevioletred}
-.evenrow{background-color: #CCCCFF}
+h1, h2 {color:palevioletred;}
+.evenrow{background-color: #CCCCFF;}
 h1 {font-size: 5em;}
 h2 {font-size: 3em;}
 
@@ -8,16 +8,16 @@ body {color: darkcyan}
 body {background-color: #DFF2EB;}
 
 a:link {
-    color:darkmagenta
+    color:darkmagenta;
 }
 a:visited {
-    color: #CB80AB
+    color: #CB80AB;
 }
 
 nav {background-color: #EECAD5;}
 nav a {color: #D5ED9F;}
 nav a:hover {background-color: #DC0083;}
 nav {padding: 10px;}
-nav {margin-bottom: 30px}
+nav {margin-bottom: 30px;}
 
 .quote {float: right;}
