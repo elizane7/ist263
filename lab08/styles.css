@@ -19,3 +19,5 @@ nav a {color: #D5ED9F;}
 nav a:hover {background-color: #DC0083;}
 nav {padding: 10px;}
 nav {margin-bottom: 30px}
+
+.quote {float: right;}
