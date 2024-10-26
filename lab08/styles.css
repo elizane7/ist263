@@ -22,3 +22,55 @@ nav {margin-bottom: 30px;}
 
 .quote {float: right;}
 .copyright {float: left;}
+
+.flex-container {display: flex; justify-content: space-between; background-color: #EECAD5; border-radius: 10px; padding: 20px; margin: 20px;}
+
+.firstrow {background-color: #E0F7FA;}
+.secondrow {background-color: #E0F7FA;}
+
+.address, .contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;}
+
+    .flex-container > div {
+        flex: 1;                         /* Equal width for both columns */
+        padding: 15px;                   /* Padding inside columns for spacing */
+        margin-right: 10px;              /* Space between columns */
+    }
+    
+    .flex-container > div:last-child {
+        margin-right: 0;                 /* Removes right margin from last column */
+    }
+    
+
+    form input[type="text"],
+form textarea {
+    width: 100%;                     /* Make inputs fill available width */
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Submit button styling */
+form input[type="submit"] {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #D5ED9F;
+}
+
+/* Map styling to fill space and avoid alignment issues */
+.map-container iframe {
+    width: 100%;                     /* Ensure map iframe fills container */
+    height: 100%;                    /* Adjust height to fit form space */
+    border-radius: 5px;
+}
