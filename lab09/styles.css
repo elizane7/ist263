@@ -92,9 +92,5 @@ form input[type="submit"]:hover {
 
 .skill-item {text-align: center; flex: 1;}
 
-.other-skills {
-    background-color: #CB80AB;     
-    color: #FFFFFF;
-    border-radius: 10px;           
-}
+.other-skills {background-color: #CB80AB; color: #FFFFFF;border-radius: 10px; }
 
