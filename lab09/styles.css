@@ -75,7 +75,7 @@ form input[type="submit"]:hover {
     border-radius: 5px;
 }
 
-#skills header {width: 50%; margin: 0 auto}
+#skillsheader {width: 50%; margin: 0 auto}
 
 .fa-brands fa-python {width: 10%;}
                 
