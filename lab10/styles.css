@@ -98,3 +98,5 @@ form input[type="submit"]:hover {
     display: flex;                     
     justify-content: space-between;    
     padding: 20px;                    }
+
+.image {max-width: 100%;}
