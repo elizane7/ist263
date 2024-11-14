@@ -5,13 +5,15 @@
         <meta charset="utf-8">
     </head>
     <body>
-        <div>
+        <div id="divtext" onclick="changetext()">
             Syracuse University
         </div>
         <script>
-            document.getElementsByTagName("div").innerHTML = "Orange Nation"
+            function changetext() {
+            document.getElementById("divtext").innerHTML = "Orange Nation"
 
-            document.getElementsByTagName("div").style.color = "#FFA500"
+            document.getElementById("divtext").style.color = "#FFA500"
+            }
         </script>
     </body>
 </html>
