@@ -12,7 +12,6 @@ body {
     padding: 20px;
 }
 
-
 nav {
     display: flex;
     justify-content: center;
@@ -34,8 +33,6 @@ nav a:hover {
     color: #d9534f;  
 }
 
-
-
 main {
     display: flex;
     flex-wrap: wrap;
@@ -46,8 +43,6 @@ main {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
-
-
 
 h1 {
     font-size: 2.5rem;
@@ -61,8 +56,6 @@ h2 {
     color: #d9534f;  
     margin-bottom: 10px;
 }
-
-
 
 p {
     font-size: 1rem;
@@ -81,21 +74,42 @@ a:hover {
     color: #d9534f;  
 }
 
+.section-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    width: 100%;
+}
 
-div {
-    flex: 1 1;
+.section {
+    flex: 1 1 45%; 
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 8px;
     background-color: #ffffff;  
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    
     border-left: 5px solid #d9534f;  
 }
 
-div:hover {
+.section:hover {
     transform: scale(1.02);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+img {
+    width: 100%;
+    max-width: 300px; /* Limit the image size */
+    height: auto; /* Maintain the aspect ratio */
+    margin-bottom: 15px;
+}
+
+ul {
+    margin-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
 }
 
 @media (max-width: 768px) {
@@ -103,11 +117,15 @@ div:hover {
         flex-wrap: wrap;
     }
 
-    div {
-        flex: 1 1 100%; 
+    .section {
+        flex: 1 1 100%; /* Make sections stack vertically on smaller screens */
     }
 
     h1 {
         font-size: 2rem;
+    }
+
+    img {
+        max-width: 100%; /* Allow images to take full width of their container on smaller screens */
     }
 }
