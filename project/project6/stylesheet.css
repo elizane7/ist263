@@ -1,24 +1,25 @@
-
-body, h1, h2, p, ul, li, nav, a {
+body, h1, h2, p, ul, li, a {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    background-color: #f0f4f8;  
     color: #333;
-    background-color: #f4f4f4;
-    padding: 10px;
+    padding: 20px;
 }
 
 
 nav {
-    background-color: #007BFF;
-    padding: 10px 0;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-color: #1e3a5f;  
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
 }
 
 nav a {
@@ -26,59 +27,87 @@ nav a {
     text-decoration: none;
     margin: 0 15px;
     font-weight: bold;
+    transition: color 0.3s ease;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    color: #d9534f;  
 }
+
 
 
 main {
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 20px;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-
-.section-container {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: space-between;
+    padding: 10px;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
 
-.section {
-    flex: 1 1 45%;
-    background: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 15px;
+
+h1 {
+    font-size: 2.5rem;
+    color: #1e3a5f;  
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 
-
-.section img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
+h2 {
+    font-size: 1.5rem;
+    color: #d9534f;  
     margin-bottom: 10px;
 }
 
 
-ul {
-    text-align: left;
-    list-style-type: disc;
-    margin: 10px 0 0;
-    padding: 0 20px;
+
+p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #555;
 }
 
-/* Responsive Design */
+a {
+    color: #0073e6;  
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #d9534f;  
+}
+
+
+div {
+    flex: 1 1;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #ffffff;  
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
+    border-left: 5px solid #d9534f;  
+}
+
+div:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 @media (max-width: 768px) {
-    .section {
-        flex: 1 1 100%;
+    nav {
+        flex-wrap: wrap;
+    }
+
+    div {
+        flex: 1 1 100%; 
+    }
+
+    h1 {
+        font-size: 2rem;
     }
 }
