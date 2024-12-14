@@ -1,0 +1,121 @@
+body { font-family: Georgia, serif; }
+h1, h2 {color:palevioletred;}
+.evenrow{background-color: #CCCCFF;}
+h1 {font-size: 5em;}
+h2 {font-size: 3em;}
+
+body {color: darkcyan}
+body {background-color: #DFF2EB;}
+
+a:link {
+    color:darkmagenta;
+}
+a:visited {
+    color: #CB80AB;
+}
+
+nav {background-color: #EECAD5;}
+nav a {color: #D5ED9F;}
+nav a:hover {background-color: #DC0083;}
+nav {padding: 10px;}
+nav {margin-bottom: 30px;}
+
+.quote {float: right;}
+.copyright {float: left;}
+
+.flex-container {display: flex; justify-content: space-between; background-color: #EECAD5; border-radius: 10px; padding: 20px; margin: 20px;}
+
+.firstrow {background-color: #E0F7FA;}
+.secondrow {background-color: #E0F7FA;}
+
+.address, .contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;}
+
+    .flex-container > div {
+        flex: 1;                         /* Equal width for both columns */
+        padding: 15px;                   /* Padding inside columns for spacing */
+        margin-right: 10px;              /* Space between columns */
+    }
+    
+    .flex-container > div:last-child {
+        margin-right: 0;                 /* Removes right margin from last column */
+    }
+    
+
+    form input[type="text"],
+form textarea {
+    width: 100%;                     /* Make inputs fill available width */
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Submit button styling */
+form input[type="submit"] {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;}
+
+
+form input[type="submit"]:hover {
+    background-color: #D5ED9F;
+}
+
+/* Map styling to fill space and avoid alignment issues */
+.map-container iframe {
+    width: 100%;                     /* Ensure map iframe fills container */
+    height: 100%;                    /* Adjust height to fit form space */
+    border-radius: 5px;
+}
+
+#skillsheader {width: 50%; margin: 0 auto}
+
+.fa-brands fa-python {width: 10%;}
+                
+.fa-solid fa-chart-simple {width: 10%;}
+                
+.fa-solid fa-database {width: 10%;}
+                
+                
+.fa-solid fa-file-excel {width: 10%;}
+
+.fa-solid fa-presentation-screen {width: 10%;}
+
+.skills-row {display: flex; justify-content: space-between; align-items: center; }
+
+.skill-item {text-align: center; flex: 1;}
+
+.other-skills {background-color: lightblue; border-radius: 10px; }
+
+.flexbox-2 {
+    display: flex;                     
+    justify-content: space-between;    
+    padding: 20px;                    }
+
+.image {max-width: 100%;}
+
+.flex-container{display: flex;
+    flex-wrap: wrap;}
+
+@media (max-width: 768px) { }
+
+@media (max-width: 768px) {
+        nav a {display: block;
+            width: 100%;} }
+
+@media (max-width: 768px) {nav span {display: none;} }
+
+@media (max-width: 768px) {
+    nav a {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+    }
+}
